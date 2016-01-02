@@ -1,0 +1,186 @@
+% Errata from Introduction to Real Analysis by DePree and Swartz
+% By John Peloquin
+\documentclass[letterpaper,12pt]{article}
+\usepackage{amsmath,amssymb,amsthm,enumitem,fourier}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rex}{\overline{\R}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\D}{\mathcal{D}}
+\renewcommand{\P}{\mathcal{P}}
+
+\newcommand{\union}{\cup}
+\newcommand{\sect}{\cap}
+\newcommand{\conv}{\ast}
+\newcommand{\after}{\circ}
+
+\newcommand{\abs}[1]{|{#1}|}
+\newcommand{\bigabs}[1]{\left|{#1}\right|}
+\newcommand{\norm}[1]{\lVert{#1}\rVert}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\newcommand{\comp}[1]{#1^c}
+\renewcommand{\d}[1]{\,d\!{#1}}
+\newcommand{\dx}{\d{x}}
+\newcommand{\dy}{\d{y}}
+\newcommand{\df}{d\!f}
+
+% Meta
+\title{Errata from \textit{Introduction to Real Analysis}}
+\author{John Peloquin}
+\date{}
+
+\begin{document}
+\maketitle
+\section*{Introduction}
+This document contains errata from~\cite{depree}. Locations in the text are indicated by coordinates~\((p,n)\), where \(p\)~is a page number and \(n\)~is a line number on page~\(p\). Positive line numbers count from the top of the page, whereas negative line numbers count from the bottom of the page. Displayed equations, diagrams, and figures are counted as single lines.
+
+Font styling errors that do not cause mathematical confusion (for example, \(f\)~instead of~\(\vec{f}\), or \(C[a,b]\)~instead of~\(\C[a,b]\)) and non-mathematical errors are not listed. Some of the items below refer to unclear or incomplete passages and may not be errors.
+
+\section*{Chapter~1}
+\begin{itemize}
+\item (10, 12): it should be noted that countably infinite sets are infinite, under the definitions given.
+\item (11, 5): this example uses the principle of ``strong'' induction, whereas only the principle of ``weak'' induction was presented; it should be noted that these are equivalent.
+\item (11, 16): \(n_{n+1}\)~should be~\(n_{i+1}\).
+\end{itemize}
+
+\section*{Chapter~4}
+\begin{itemize}
+\item (50, -1): in Exercise~33, it is false that the series diverges if \(r>1\) (for a counterexample, see Example~16); however, the series diverges if the limit \emph{inferior} is greater than~\(1\).
+\end{itemize}
+
+\section*{Chapter~5}
+\begin{itemize}
+\item (54, 17): in Proposition~5, \(i,\ldots,n\) should be \(i=1,\ldots,n\).
+\end{itemize}
+
+\section*{Chapter~6}
+\begin{itemize}
+\item (60, 6): \(f(\vec{x})\)~should be~\(f(\vec{x}_k)\).
+\end{itemize}
+
+\section*{Chapter~8}
+\begin{itemize}
+\item (80, 11): in Theorem~11, ``\(K\)~is a compact subset'' should be ``\(K\)~is a nonempty compact subset''.
+\item (80, -12): ``compact set'' should be ``nonempty compact set''.
+\item (82, 15): in Exercise~2, ``bounded above and closed'' should be ``nonempty, bounded above, and closed''.
+\end{itemize}
+
+\section*{Chapter~10}
+\begin{itemize}
+\item (103, 2): it should be added ``except \(f(0,0)=0\)''.
+\item (104, 5): in the displayed equation, \(x_h\)~should be~\(x_i\).
+\end{itemize}
+
+\section*{Chapter~11}
+\begin{itemize}
+\item (129, -14): \(\vec{A}_k=\vec{f}(\vec{x}_k)\) should be \(\vec{A}_k=\vec{f}_{\!\!k}(\vec{x}_0)\).
+\end{itemize}
+
+\section*{Chapter~12}
+\begin{itemize}
+\item (141, -3): \(x_{-1}\)~should be~\(x_{i-1}\).
+\end{itemize}
+
+\section*{Chapter~13}
+\begin{itemize}
+\item (152, -9): ``\(f(t)=t\sin(1/t)\)'' should be ``\(f(t)=t^2\sin(1/t^2)\) with \(f(0)=0\)'', since the former function is neither defined nor differentiable at \(t=0\).
+\item (156, 2): \(\int_i\abs{f}\)~should be~\(\int_I\abs{f}\).
+\item (159, -9): in the displayed equation, \(S(g_i,\D)\)~should be~\(S(g_1,\D)\).
+\item (162, -7): ``any partial tagged division'' should be ``any \(\gamma\)-fine partial tagged division''.
+\item (164, 8): in the displayed equation, it is not clear why \(f-f(x)\) is absolutely integrable. This follows from Corollary~33 later in the chapter.
+\item (165, -5): in the displayed equation, \(\sum_{i=1}^n\abs{f}\) should be \(\sum_{i=1}^n\int_{x_{i-1}}^{x_i}\abs{f}\).
+\item (166, -8): in the displayed equation, the subscript~\(I_j'\) should be~\(I_i'\).
+\item (166, -6): in the displayed equation, \(\int_{I_i'}\abs{f}\)~should be~\(\bigabs{\int_{I_i'}f}\).
+\item (169, -6): ``continuous functions of bounded variation'' is true, but should be ``continuous increasing functions''.
+\end{itemize}
+
+\section*{Chapter~14}
+\begin{itemize}
+\item (182, 16): ``unbounded'' has not been defined in~\(\Rex\), so it should be noted that intervals containing \(\pm\infty\) are considered unbounded in~\(\Rex\) in this book (despite the fact that under standard constructions of~\(\Rex\) as a metric space, they are bounded).
+\item (189, 11): in Exercise~10, \(f(n+1)-f(n)-\int_1^n f\) should be \(\sum_{k=1}^n f(k)-\int_1^n f\).
+\end{itemize}
+
+\section*{Chapter~16}
+\begin{itemize}
+\item (213, 11): \(I\union\comp{E}\)~should be~\(I\sect\comp{E}\).
+\end{itemize}
+
+\section*{Chapter~17}
+\begin{itemize}
+\item (219, -3): in Definition~1, \(x_i\in I\) should be \(x_i\in I_i\).
+\item (223, 4): in Lemma~9, \(\Rex^p\)~should be~\(\R^p\) because compactness has not been defined in~\(\Rex^p\), and if we adopt a standard definition then \(\Rex^p\)~is compact, which is clearly not intended here based on the proof and the remarks following.
+\item (223, 10): ``diameter'' has not yet been defined.
+\item (224, 1): in Theorem~10, \(\Rex^p\)~should be~\(\R^p\).
+\item (227, -2): in the proof of Corollary~13, it is not clear why
+\[\int_H\int_G f(x,y)\dx\dy=\lim\int_H\int_G f_n(x,y)\dx\dy\]
+Specifically, in the context of this proof it seems like we want to show that \(\{\int_G f_n(x,y)\dx\}\) is bounded above for each \(y\in H\) and apply the monotone convergence theorem once to conclude that \(f(\cdot,y)\)~is integrable over~\(G\) and \(\int_G f(x,y)\dx=\lim\int_G f_n(x,y)\dx\) for each \(y\in H\). But it is not clear why the sequence of integrals is bounded above.
+\end{itemize}
+
+\section*{Chapter~18}
+\begin{itemize}
+\item (239, -2): in Exercise~3, \(f\conv g\)~is not necessarily integrable. For example, if \(f(x)=1\) and \(g(y)=e^{-y^2}\), then \(f\conv g(x)=\sqrt{\pi}\), which is not integrable. However, \(f\conv g\)~is continuous.
+\end{itemize}
+
+\section*{Chapter~21}
+\begin{itemize}
+\item (264, 5): in Definition~11, ``Let \(E\subseteq S\)'' should be ``Let \(E\subseteq S\) be nonempty''.
+\item (266, -3): in Example~21, it is not clear why \(T(X)\subseteq X\) (specifically, why the convolution product of two continuous, absolutely integrable functions is continuous).
+\end{itemize}
+
+\section*{Chapter~23}
+\begin{itemize}
+\item (286, -3): in Example~5, it is not clear why \(K(f)\in\C[a,b]\). (Theorem~15.5 does not allow variable limits of integration.)
+\item (288, 13): in Exercise~3, in the displayed equation, ``\(\forall x,y\in S\)'' should be ``\(\forall x,y\in S\) with \(x\ne y\)''.
+\end{itemize}
+
+\section*{Chapter~24}
+\begin{itemize}
+\item (294, -13): it is not clear why \(f\in E_n\), since we may have \(t\not\in(0,1-1/n)\).
+\end{itemize}
+
+\section*{Chapter~25}
+\begin{itemize}
+\item (304, 1): in Exercise~14, ``Let \(K_i\)~be compact'' should be ``Let \(K_i\)~be nonempty and compact''.
+\item (304, -4): in Exercise~29, ``\(\forall x,y\in S\)'' should be ``\(\forall x,y\in S\) with \(x\ne y\)''.
+\end{itemize}
+
+\section*{Chapter~27}
+\begin{itemize}
+\item (314, 17): \(G\sect E_{\alpha_0}=\emptyset\) should be \(G\sect E_{\alpha_0}\ne\emptyset\).
+\item (314, -9): in the displayed equation, \(S_1\union\{y_2\}\) should be \(S_1\times\{y_2\}\).
+\end{itemize}
+
+\section*{Chapter~29}
+\begin{itemize}
+\item (325, 7): in the displayed equation, the second~\(\vec{e}_j\) should be~\(\vec{e}_i\).
+\item (332, -14): ``when \(m=k\)'' should be ``when \(n=k\)''.
+\item (333, -5): the proof of the continuity of~\(\df\) in Proposition~17 is flawed because (assuming \(\df=d_1f=d_2f=0\) outside of~\(D\)) we have
+\begin{align*}
+\df:X\times Y&\to L(X\times Y,Z)\\
+d_1f\after I_1:X&\to L(X,Z)\\
+d_2f\after I_2:Y&\to L(Y,Z)
+\end{align*}
+so the functional equation \(\df=d_1f\after I_1+d_2f\after I_2\) makes no sense.
+
+By Proposition~16,
+\[\df(x,y)(h,k)=d_1f(x,y)(h)+d_2f(x,y)(k)\]
+for all \((x,y),(h,k)\in X\times Y\), so
+\[\df(x,y)=d_1f(x,y)\after P_1+d_2f(x,y)\after P_2\]
+for all \((x,y)\in X\times Y\), where \(P_1\in L(X\times Y,X)\) and \(P_2\in L(X\times Y,Y)\) are just the projections \(P_1(h,k)=h\) and \(P_2(h,k)=k\). Define \(\P_1:L(X,Z)\to L(X\times Y,Z)\) by \(\P_1(\varphi)=\varphi\after P_1\) and \(\P_2:L(Y,Z)\to L(X\times Y,Z)\) by \(\P_2(\psi)=\psi\after P_2\). Then
+\[\df=\P_1\after d_1f+\P_2\after d_2f\tag{1}\]
+Now \(\P_1\)~is linear and
+\[\norm{\P_1(\varphi)}=\norm{\varphi\after P_1}\le\norm{\varphi}\norm{P_1}=\norm{\varphi}\]
+so \(\P_1\)~is also continuous, and similarly \(\P_2\)~is linear and continuous. It follows from~(1) that \(\df\)~is continuous.
+\end{itemize}
+
+\section*{Chapter~30}
+\begin{itemize}
+\item (338, -9): it is not clear why \(\varphi(0)=0\) is required in the definition of~\(S\).
+\item (342, 5): in the displayed equation, \(d_1F\)~should be~\(d_1f\).
+\end{itemize}
+
+% References
+\begin{thebibliography}{0}
+\bibitem{depree} DePree, J.~D. and C.~W. Swartz. \textit{Introduction to Real Analysis,} 1st printing (hardcover). Wiley, 1988.
+\end{thebibliography}
+\end{document}
