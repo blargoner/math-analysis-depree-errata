@@ -1,7 +1,6 @@
 # _Introduction to Real Analysis_ by DePree and Swartz
 Errata by John Peloquin.
 
-[![PDF Status](https://www.sharelatex.com/github/repos/blargoner/math-analysis-depree-errata/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/blargoner/math-analysis-depree-errata/builds/latest/output.pdf)
 
 Notes and exercises for the book are [here](https://github.com/blargoner/math-analysis-depree).
 
